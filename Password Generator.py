@@ -13,3 +13,22 @@ character = ['!', '@', '#', '$', '%', '&', '*', '+', ':', '<', '>', '/', '(', ')
 # Give The Input From User
 numbers_letters = int(input("Enter The Number of letters Do You want:"))
 
+numbers_number = int(input("Enter The Numbers of number Do You want:"))
+
+numbers_character = int(input("Enter The Number of letters Do You want:"))
+
+#GENERATE PASSWORD
+
+password =""
+
+for char in range(1, numbers_letters+1):
+    password += random.choice(letters)
+
+for char in range(1, numbers_number+1):
+    password += random.choice(number)
+
+for char in range(1, numbers_character+1):
+    password += random.choice(character)
+
+
+
