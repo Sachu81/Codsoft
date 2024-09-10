@@ -15,7 +15,7 @@ numbers_letters = int(input("Enter The Number of letters Do You want:"))
 
 numbers_number = int(input("Enter The Numbers of number Do You want:"))
 
-numbers_character = int(input("Enter The Number of letters Do You want:"))
+numbers_character = int(input("Enter The Number of character Do You want:"))
 
 #GENERATE PASSWORD
 
@@ -29,6 +29,8 @@ for char in range(1, numbers_number+1):
 
 for char in range(1, numbers_character+1):
     password += random.choice(character)
+
+print(password)
 
 
 
