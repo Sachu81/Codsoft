@@ -63,3 +63,22 @@ paper_btn.grid(row = 1, column = 2, padx = 8, pady = 5)
 scissors_btn = Button(input_frame, text = 'Scissors', width = 15, bd = 0, bg = 'light blue', pady = 5, command = lambda: player_choice(options[2]))
 scissors_btn.grid(row = 1, column = 3, padx = 8, pady = 5)
 
+# Displaying Score and players choice
+score_label = Label(input_frame, text='Score : ', font=app_font, fg='purple', bg='#FFE873')
+score_label.grid(row=2, column=0)
+
+player_choice_label = Label(input_frame, text='Your Selected : ---', font=app_font, bg='#FFE873')
+player_choice_label.grid(row=3, column=1, pady=5)
+
+player_score_label = Label(input_frame, text='Your Score : 0', font=app_font, bg='#FFE873')
+player_score_label.grid(row=3, column=2, pady=5)
+
+computer_choice_label = Label(input_frame, text='Computer Selected : ---', font=app_font, fg='black', bg='#FFE873')
+computer_choice_label.grid(row=4, column=1, pady=5)
+
+computer_score_label = Label(input_frame, text='Computer Score : 0', font=app_font, fg='black', bg='#FFE873')
+computer_score_label.grid(row=4, column=2, padx=(10, 0), pady=5)
+
+root.mainloop()
+
+
