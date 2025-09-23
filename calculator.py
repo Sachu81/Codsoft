@@ -43,4 +43,5 @@ while True:
             if next_calculation == 'no':
                 break
             else:
-                print("Invakid Input")
+                print("Invalid Input")
+
